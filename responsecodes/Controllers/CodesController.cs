@@ -10,19 +10,19 @@ namespace responsecodes.Controllers
     [Route("/")]
     public class CodesController : Controller
     {
-        [Route("four")]
+        [Route("400")]
         public IActionResult Four()
         {
             return BadRequest(JsonConvert.SerializeObject("Bad request, yo!"));
         }
 
-        [Route("two")]
+        [Route("200")]
         public IActionResult Two()
         {
             return new CreatedResult("/here", JsonConvert.SerializeObject("wellDone"));
         }
 
-        [Route("five")]
+        [Route("500")]
         public IActionResult Five()
         {
             return StatusCode(500, JsonConvert.SerializeObject("Big failure!"));
