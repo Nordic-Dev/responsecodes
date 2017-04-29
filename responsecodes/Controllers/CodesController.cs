@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace responsecodes.Controllers
 {
@@ -10,17 +11,17 @@ namespace responsecodes.Controllers
     {
         public IActionResult Four()
         {
-            return BadRequest("Bad request, yo!");
+            return BadRequest(JsonConvert.SerializeObject("Bad request, yo!"));
         }
 
         public IActionResult Two()
         {
-            return new CreatedResult("/here", "wellDone");
+            return new CreatedResult("/here", JsonConvert.SerializeObject("wellDone"));
         }
 
         public IActionResult Five()
         {
-            return StatusCode(500, "Big failure!");
+            return StatusCode(500, JsonConvert.SerializeObject("Big failure!"));
         }
 
 
