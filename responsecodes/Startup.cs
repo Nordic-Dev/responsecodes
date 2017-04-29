@@ -53,7 +53,7 @@ namespace responsecodes
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Codes}/{action=Index}/{id?}");
+                    template: "{controller=Codes}/{action=Two}/{id?}");
             });
         }
     }

@@ -8,11 +8,6 @@ namespace responsecodes.Controllers
 {
     public class CodesController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
-
         public IActionResult Four()
         {
             return BadRequest("Bad request, yo!");
@@ -20,7 +15,7 @@ namespace responsecodes.Controllers
 
         public IActionResult Two()
         {
-            return new OkResult();
+            return CreatedResult("/here", "wellDone");
         }
 
         public IActionResult Five()
