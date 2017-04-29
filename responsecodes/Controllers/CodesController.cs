@@ -15,7 +15,7 @@ namespace responsecodes.Controllers
 
         public IActionResult Two()
         {
-            return CreatedResult("/here", "wellDone");
+            return new CreatedResult("/here", "wellDone");
         }
 
         public IActionResult Five()

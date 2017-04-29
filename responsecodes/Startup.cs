@@ -49,6 +49,12 @@ namespace responsecodes
 
             app.UseStaticFiles();
 
+            app.UseCors(builder => builder
+                .AllowAnyHeader()
+                .AllowAnyMethod()
+                .AllowAnyOrigin()
+            );
+
             app.UseMvc(routes =>
             {
                 routes.MapRoute(
