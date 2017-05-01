@@ -10,16 +10,28 @@ namespace responsecodes.Controllers
     [Route("/")]
     public class CodesController : Controller
     {
+        [Route("200")]
+        public IActionResult Two()
+        {
+            return new OkResult();
+        }
+
+        [Route("201")]
+        public IActionResult TwoOhOne()
+        {
+            return new CreatedResult("/here", JsonConvert.SerializeObject("wellDone"));
+        }
+
         [Route("400")]
         public IActionResult Four()
         {
             return BadRequest(JsonConvert.SerializeObject("Bad request, yo!"));
         }
 
-        [Route("200")]
-        public IActionResult Two()
+        [Route("401")]
+        public IActionResult FourOhOne()
         {
-            return new CreatedResult("/here", JsonConvert.SerializeObject("wellDone"));
+            return Unauthorized();
         }
 
         [Route("500")]

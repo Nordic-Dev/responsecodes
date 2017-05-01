@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 responsecodes/Properties/PublishProfiles/CustomProfile.pubxml
+responsecodes/Properties/PublishProfiles/Prod.pubxml
