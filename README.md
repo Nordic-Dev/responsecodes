@@ -31,9 +31,13 @@ The /500 endpoint returns 500
 
 ## Examples
 https://codes.nordicdev.io/200
+
 https://codes.nordicdev.io/201
+
 https://codes.nordicdev.io/400
+
 https://codes.nordicdev.io/401
+
 https://codes.nordicdev.io/500
 
 
