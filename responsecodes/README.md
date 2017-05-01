@@ -1,6 +1,6 @@
 ﻿# Response Codes
 
-A simple ASP.NET Core app that returns specific response codes when specific endpoints are called
+A simple ASP.NET Core app that returns specific response codes when specific endpoints are called. It can come in handy when you need a quick and dirty way to test your application receiving specific responses from an API.
 
 ## Setup
 
