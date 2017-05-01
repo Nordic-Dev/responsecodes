@@ -4,7 +4,7 @@ A simple ASP.NET Core app that returns specific response codes when specific end
 
 ## Setup
 
-> git clone 
+> git clone https://github.com/Nordic-Dev/responsecodes.git
 > 
 > cd responsecodes\responsecodes
 > 
